@@ -9,4 +9,4 @@ RUN \
 USER gearman
 EXPOSE 4730
 
-ENTRYPOINT [ "gearmand" ]
+ENTRYPOINT [ "gearmand", "-l", "stderr" ]
